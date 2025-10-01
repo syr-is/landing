@@ -4,6 +4,7 @@
 	import PanelLeftIcon from '@lucide/svelte/icons/panel-left';
 	import type { ComponentProps } from 'svelte';
 	import { useSidebar } from './context.svelte.js';
+	import { sidebarIsOpenStore } from '$lib/controllers/runtime.svelte';
 
 	let {
 		ref = $bindable(null),
@@ -27,6 +28,7 @@
 	onclick={(e) => {
 		onclick?.(e);
 		sidebar.toggle();
+		sidebarIsOpenStore.set(sidebar.open);
 	}}
 	{...restProps}
 >
