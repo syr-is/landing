@@ -59,7 +59,7 @@
 				<Image
 					class="h-auto max-h-[80vh] w-full rounded object-contain md:h-full md:w-auto"
 					photo={{
-						url: '/images/syr-tease.gif',
+						url: '/images/syr-tease.webp',
 						caption: 'Think about it',
 						alt: 'Thinking support graphic'
 					}}
