@@ -14,7 +14,13 @@ const config = {
 				formats: ['image/avif', 'image/webp'],
 				minimumCacheTTL: 300,
 				domains: ['syr.is', 'www.syr.is'],
-				qualities: [25, 50, 75],
+				remotePatterns: [
+					{
+						protocol: 'https',
+						hostname: 'vercel.app',
+						pathname: '/**',
+					}
+				],
 			}
 		}),
 		alias: {
