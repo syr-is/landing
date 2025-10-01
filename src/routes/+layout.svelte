@@ -9,6 +9,8 @@
 	import { fromStore } from 'svelte/store';
 	const sidebarStore = fromStore(sidebarIsOpenStore);
 	let sidebarIsOpen = $derived(sidebarStore.current);
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	injectSpeedInsights();
 
 	let { children } = $props();
 

@@ -49,10 +49,12 @@
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"@tailwindcss/oxide",
+			"@vercel/speed-insights",
 			"esbuild"
 		]
 	},
 	"dependencies": {
+		"@vercel/speed-insights": "^1.2.0",
 		"mode-watcher": "^1.1.0"
 	}
 }
