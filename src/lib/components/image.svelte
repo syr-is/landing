@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { optimize } from '$lib/image';
 	import type { Photo } from '$lib/types';
 	import type { HTMLAttributes, HTMLImgAttributes } from 'svelte/elements';
 
@@ -16,7 +15,7 @@
 	{...figureProps}
 	class={`flex h-full w-full flex-col items-center justify-center ${figureProps?.class}`}
 >
-	<img srcset={optimize(photo.url)} alt={photo.alt || photo.caption || ''} {...restProps} />
+	<img srcset={photo.url} alt={photo.alt || photo.caption || ''} {...restProps} />
 	<figcaption
 		{...captionProps}
 		class={`p-2 text-center text-muted-foreground ${captionProps?.class}`}
