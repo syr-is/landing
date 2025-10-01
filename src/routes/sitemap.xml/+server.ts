@@ -3,8 +3,9 @@ export async function GET() {
 	const urls = [
 		{
 			loc: `/`,
-			changefreq: 'monthly',
-			priority: '1.0'
+			changefreq: 'daily',
+			priority: '1.0',
+            lastmod: "2025-10-01"
 		}
 	];
 
@@ -21,6 +22,7 @@ ${urls
     <loc>${site}/${u.loc}</loc>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
+    <lastmod>${u.lastmod}</lastmod>
   </url>`
 	)
 	.join('\n')}
