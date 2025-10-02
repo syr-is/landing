@@ -10,6 +10,10 @@ export const bionicHtmlFormatter = (bold: string, normal?: string) => {
 	return (bold ? '<b>' + bold + '</b>' : '') + (normal || '');
 };
 
+export const bionicMarkdownFormatter = (bold: string, normal?: string) => {
+	return (bold ? '**' + bold + '**' : '') + (normal || '');
+};
+
 export const bionicReader = (
 	text: string,
 	formatter?: (bold: string, normal?: string) => string

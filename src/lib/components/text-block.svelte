@@ -23,7 +23,7 @@
 
 <div
 	{...props}
-	class={`prose mx-auto max-w-[65ch] text-justify md:max-w-[75ch] lg:max-w-[80ch] ${props.class ? props.class + ' ' : ''}`}
+	class={`prose prose-slate dark:prose-invert mx-auto max-w-[65ch] text-justify md:max-w-[75ch] lg:max-w-[80ch] ${props.class ? props.class + ' ' : ''}`}
 >
 	{@html rendered}
 </div>

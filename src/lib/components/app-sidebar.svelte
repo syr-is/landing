@@ -1,6 +1,7 @@
 <script lang="ts">
 	// import CalendarIcon from '@lucide/svelte/icons/calendar';
 	import HouseIcon from '@lucide/svelte/icons/house';
+	import BookIcon from '@lucide/svelte/icons/book';
 	// import InboxIcon from '@lucide/svelte/icons/inbox';
 	// import SearchIcon from '@lucide/svelte/icons/search';
 	// import SettingsIcon from '@lucide/svelte/icons/settings';
@@ -23,10 +24,15 @@
 	// Menu items.
 	const items = [
 		{
-			title: 'Home',
+			title: 'Syr',
 			url: '/',
 			icon: HouseIcon
 		},
+		{
+			title: 'Whitepaper',
+			url: '/whitepaper',
+			icon: BookIcon
+		}
 		// {
 		// 	title: 'Inbox',
 		// 	url: '#',
