@@ -14,8 +14,6 @@ export const bionicReader = (
 	text: string,
 	formatter?: (bold: string, normal?: string) => string
 ) => {
-	// Ensure we never alter HTML tags/attributes; only transform text nodes.
-	// Split the input into tags and non-tag text, apply bionic formatting only to non-tags.
 	const applyToText = (content: string, fmt: (bold: string, normal?: string) => string) =>
 		content.replace(/[A-Za-z0-9']+/g, (word) => {
 			const boldChars = isNaN(Number(word)) ? word.length - getBoldLength(word.length) : 0;
@@ -32,7 +30,6 @@ export const bionicReader = (
 		return applyToText(text, effectiveFormatter);
 	}
 
-	// Split on HTML tags while retaining them in the output
 	const segments = text.split(/(<[^>]*>)/g);
 	const transformed = segments
 		.map((segment) => {

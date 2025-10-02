@@ -4,7 +4,7 @@
 	import { bionicReadingIsEnabledStore } from '$lib/controllers/runtime.svelte';
 	import { fromStore } from 'svelte/store';
 
-	interface TextBlockProps extends HTMLAttributes<any> {
+	interface TextBlockProps extends HTMLAttributes<HTMLDivElement> {
 		text: string;
 	}
 

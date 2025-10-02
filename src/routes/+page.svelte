@@ -54,7 +54,7 @@
 				</section>
 			</div>
 			<aside
-				class="flex w-full items-center justify-center md:translate-y-[-300px] md:items-start md:self-stretch md:pt-4"
+				class="flex w-full md:pt-4"
 			>
 				<Image
 					class="h-auto max-h-[80vh] w-full rounded object-contain md:h-full md:w-auto"

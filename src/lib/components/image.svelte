@@ -13,7 +13,7 @@
 
 <figure
 	{...figureProps}
-	class={`flex h-full w-full flex-col items-center justify-center ${figureProps?.class}`}
+	class={`flex h-full w-full flex-col ${figureProps?.class}`}
 >
 	<img srcset={photo.url} alt={photo.alt || photo.caption || ''} {...restProps} />
 	<figcaption
