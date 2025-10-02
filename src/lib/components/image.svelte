@@ -15,7 +15,7 @@
 	{...figureProps}
 	class={`flex h-full w-full flex-col ${figureProps?.class}`}
 >
-	<img srcset={photo.url} alt={photo.alt || photo.caption || ''} {...restProps} />
+	<img srcset={photo.url} alt={photo.alt || photo.caption || ''} {...restProps} class={`rounded ${restProps?.class}`} />
 	<figcaption
 		{...captionProps}
 		class={`p-2 text-center text-muted-foreground ${captionProps?.class}`}

@@ -9,19 +9,19 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex()],
 	kit: {
 		adapter: adapter({
-			images: {
-				sizes: [640, 828, 1200, 1920, 3840],
-				formats: ['image/avif', 'image/webp'],
-				minimumCacheTTL: 300,
-				domains: ['syr.is', 'www.syr.is'],
-				remotePatterns: [
-					{
-						protocol: 'https',
-						hostname: '*.vercel.app',
-						pathname: '/**',
-					}
-				],
-			}
+			// images: {
+			// 	sizes: [640, 828, 1200, 1920, 3840],
+			// 	formats: ['image/avif', 'image/webp'],
+			// 	minimumCacheTTL: 300,
+			// 	domains: ['syr.is', 'www.syr.is'],
+			// 	remotePatterns: [
+			// 		{
+			// 			protocol: 'https',
+			// 			hostname: '*.vercel.app',
+			// 			pathname: '/**',
+			// 		}
+			// 	],
+			// }
 		}),
 		alias: {
 			'@/*': './path/to/lib/*'

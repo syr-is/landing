@@ -1,9 +1,9 @@
 export const getBoldLength = (l: number): number => {
-	const thresholds = [5, 13, 18, 24, 30];
+	const thresholds = [5, 8, 13, 17, 23, 27];
 	for (let i = 0; i < thresholds.length; i++) {
 		if (l < thresholds[i]) return i + 1;
 	}
-	return Math.ceil(l / 6);
+	return Math.floor(l / 6);
 };
 
 export const bionicHtmlFormatter = (bold: string, normal?: string) => {
