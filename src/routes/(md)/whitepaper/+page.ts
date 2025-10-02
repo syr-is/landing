@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 
 export async function load() {
     try {
-        const post = (await import('$lib/content/whitepaper.svx'));
+        const post = (await import('$lib/content/whitepaper.md'));
         return {
             content: post.default,
             meta: post.metadata
